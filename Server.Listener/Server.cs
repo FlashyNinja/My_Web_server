@@ -26,7 +26,8 @@ public static class Server
         return localIPList;
     }
 
-    private static HttpListener InitializeHttpListner(List<IPAddress> localhostIPs){
+    private static HttpListener InitializeHttpListner(List<IPAddress> localhostIPs)
+    {
         HttpListener httpListener = new HttpListener();
         httpListener.Prefixes.Add("http://localhost/");
 
@@ -34,10 +35,10 @@ public static class Server
         localhostIPs.ForEach(ip =>
         {
             Console.WriteLine("Listening on IP " + "http://" + ip.ToString() + "/");
-            listener.Prefixes.Add("http://" + ip.ToString() + "/");
+            httpListener.Prefixes.Add("http://" + ip.ToString() + "/");
         });
 
-        return listener;
+        return httpListener;
     }
 
     ///<summary>

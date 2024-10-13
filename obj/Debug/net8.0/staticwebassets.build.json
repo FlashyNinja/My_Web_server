@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZJy1NcAM7f4rWdW9l/3iWcH8FmCr/xyuv4mzaQCWvkg=",
+  "Source": "My_Web_server",
+  "BasePath": "_content/My_Web_server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
