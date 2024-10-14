@@ -79,7 +79,7 @@ public static class Server
     }
 
     private static void DoSomething(HttpListenerContext context){
-        string response = "Hello Browser!";
+        string response = "<html><head><meta http-equiv='content-type' content='text/html; charset=utf-8'/></head>Hello Browser!</html>";
         byte[] encoded = Encoding.UTF8.GetBytes(response);
         context.Response.ContentLength64 = encoded.Length;
         context.Response.OutputStream.Write(encoded, 0, encoded.Length);
